@@ -34,7 +34,7 @@ public class Transcriptetor {
             cmd = parser.parse(options, args);
         } catch (ParseException e) {
             System.out.println(e.getMessage());
-            formatter.printHelp("TecdocImporter", options);
+            formatter.printHelp("Transcriptetor", options);
 
             System.exit(1);
             return;
