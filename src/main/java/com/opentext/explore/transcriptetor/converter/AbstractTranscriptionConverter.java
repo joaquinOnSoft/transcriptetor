@@ -1,4 +1,4 @@
-package com.opentext.explore.converter;
+package com.opentext.explore.transcriptetor.converter;
 
 import com.opentext.explore.util.FileHelper;
 

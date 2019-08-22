@@ -1,4 +1,4 @@
-package com.opentext.explore.converter;
+package com.opentext.explore.transcriptetor.converter;
 
 import java.util.LinkedList;
 import java.util.List;

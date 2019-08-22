@@ -1,19 +1,13 @@
-package com.opentext.explore.transcriptetor;
+package com.opentext.explore.transcriptetor.converter;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.opentext.explore.util.FileHelper;
+public class Solr2HumanReadableTranscriptionConverter extends AbstractTranscriptionConverter {
 
-public class TranscriptionConverter {
-
-
-	public String jsonFile2HumanReadableTxt(String filePath) {
-		return jsonString2HumanReadableTxt(FileHelper.readLineByLine(filePath));
-	}
-	
-	public String jsonString2HumanReadableTxt(String jsonStr) {
+	@Override
+	protected String process(String jsonStr) {
 		//System.out.println(jsonStr);
 		
 		StringBuilder str = null;
@@ -80,7 +74,7 @@ public class TranscriptionConverter {
 			}
 		}
 		
-		System.out.print(str);
+		//System.out.print(str);
 		
 		return str == null? null : str.toString();
 	}

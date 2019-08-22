@@ -10,3 +10,6 @@ build
 bin
 
 *.class
+
+src/main/resources/manual/
+src/main/resources/solr/
